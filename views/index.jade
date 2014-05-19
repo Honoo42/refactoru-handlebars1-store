@@ -13,8 +13,20 @@ block content
 				hr
 				button.btn.btn-primary.add-btn(type="submit",action=false) Add To Your Wishlist
 			img(src= '{{image}}' ) 
+			{{#if sale}}
+			p
+				del Price: {{cost}}
+				br
+				ins Current Price: {{sale}}
+			{{else}}
 			p	Price: {{cost}}
+			{{/if}}
+			{{#each details}}
+			p {{this}}
+			{{/each}}
 			
+			
+
 
 	script#wishlist-template(type='text/x-handlebars-template')
 		li.wishlist-item

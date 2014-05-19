@@ -6,7 +6,7 @@ $(document).on('ready', function() {
 		    cost: 11.25,
 		    image: "http://ecx.images-amazon.com/images/I/31QRKPQ24FL._AA160_.jpg",
 		    details: {
-		      players: "1-2",
+		      players: "1-2 players",
 		      levels: "74 different areas in 7 different castles"
 		    }
 		  },
@@ -16,8 +16,8 @@ $(document).on('ready', function() {
 		    image: "http://ecx.images-amazon.com/images/I/31ACJPWHBVL._AA160_.jpg",
 		    sale: 5.00,
 		    details: {
-		      characters: "Donkey Kong and Diddy Kong",
-		      enemies: "Kremlings"
+		      characters: "Play as Donkey Kong and Diddy Kong",
+		      enemies: "Fight against the evil Kremlings"
 		    }
 		  },
 		  {
