@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	.container
+		h1 Welcome to My Store!
+		#product-inventory
+		ul#wishlist Your Wishlist
+			
+
+	script#product-template(type='text/x-handlebars-template')
+		.product
+			h2.product-title	Title: {{title}}
+				hr
+				button.btn.btn-primary.add-btn(type="submit",action=false) Add To Your Wishlist
+			img(src= '{{image}}' ) 
+			p	Price: {{cost}}
+			
+
+	script#wishlist-template(type='text/x-handlebars-template')
+		li.wishlist-item
+			h2 Title: {{title}}
+			button.btn.btn-danger.delete-btn(type="submit",action=false) Delete this item
